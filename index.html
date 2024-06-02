@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="head__title">Registration Form</h1>
+        <div class="head__subtitle">Please fill out this with the required information</div>
+    </div>
+    <form class="container" action="">
+        <label class="form__label" for="fname-id">Enter You First Name</label>
+        <input class="form__input" type="text" required="" id="fname-id">
+
+        <label class="form__label" for="lname-id">Enter Your Last Name:</label>
+        <input class="form__input" type="text" id="lname-id">
+
+        <label class="form__label" for="enter-id">Enter Your Email:</label>
+        <input class="form__input" type="text" id="enter-id">
+
+        <label class="form__label" for="password-id">Create a New Password:</label>
+        <input class="form__input" type="text" id="password-id">
+
+        <div class="account">
+            <div class="account__type">Account type (required)</div>
+
+            <div class="account__personal">
+                <input class="type__info" type="radio" name="type" id="personal-id">
+                <label for="personal-id">Personal</label>
+            </div>
+
+            <div class="account__business">
+                <input class="type__info" type="radio" name="type" id=business-id>
+                <label for="business-id">Business</label>
+            </div>
+        </div>
+
+        <label class="form__label form__input--margin" for="file-id" form="">Upload a profile picture:</label>
+        <input class="form__input form__input--file" type="file" id="file-id">
+           
+        <label class="form__label" for="age-id">Input your age (years):</label>
+        <input class="form__input" type="number" name="age" min="13" max="120" id="age-id">
+
+        <label class="form__label" for="source_id">How did you hear about us?</label>
+        <select class="form__select" id="source_id">
+            <option value="">select one</option>
+            <option value="">freeCodeCamp News</option>
+            <option value="">freeCodeCamp YouTube Channel</option>
+            <option value="">freeCodeCamp Forum</option>
+            <option value="">Other</option>
+        </select>
+
+        <label class="form__label" for="provide-id">Provide a bio:</label>
+        <textarea class="form__input form__input--textaria" rows="3" cols="30" id="provide-id" placeholder="I like coding on the beach..."></textarea>
+
+        <input type="checkbox" name="mark" id="mark-id">
+        <label for="mark-id"> I accept the <a class="form__link" href="https://www.freecodecamp.org/news/terms-of-service/"><u>terms and conditions</u></a></label>
+            
+        <button class="profile__submit">Submit</button>
+    </form>
+</body>
+
+</html>
